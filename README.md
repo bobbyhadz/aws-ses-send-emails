@@ -1,4 +1,4 @@
-# Article name here
+# How to send emails with SES in AWS CDK
 
 A repository for an article on
 [bobbyhadz.com](https://bobbyhadz.com/blog/aws-ses-send-emails)

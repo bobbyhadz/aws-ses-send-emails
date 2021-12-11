@@ -70,9 +70,10 @@ export class CdkStarterStack extends cdk.Stack {
     httpApi.addRoutes({
       methods: [apiGateway.HttpMethod.POST],
       path: '/mailer',
-      integration: new apiGatewayIntegrations.LambdaProxyIntegration({
-        handler: mailerFunction,
-      }),
+      integration: new apiGatewayIntegrations.HttpLambdaIntegration(
+        'mailer-integration',
+        mailerFunction,
+      ),
     });
 
     new cdk.CfnOutput(this, 'region', {value: cdk.Stack.of(this).region});
