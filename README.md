@@ -3,6 +3,8 @@
 A repository for an article on
 [bobbyhadz.com](https://bobbyhadz.com/blog/aws-ses-send-emails)
 
+> If you use CDK v1, switch to the cdk-v1 branch
+
 ## How to Use
 
 1. Clone the repository
@@ -25,7 +27,7 @@ export const SES_EMAIL_FROM = 'YOUR_SES_SENDER_EMAIL';
 3. Create the CDK stack
 
 ```bash
-npx cdk deploy cdk-stack \
+npx aws-cdk deploy cdk-stack \
   --outputs-file ./cdk-outputs.json
 ```
 
@@ -34,5 +36,5 @@ npx cdk deploy cdk-stack \
 5. Cleanup
 
 ```bash
-npx cdk destroy
+npx aws-cdk destroy
 ```

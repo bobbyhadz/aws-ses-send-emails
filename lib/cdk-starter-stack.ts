@@ -1,9 +1,9 @@
-import * as apiGateway from '@aws-cdk/aws-apigatewayv2';
-import * as apiGatewayIntegrations from '@aws-cdk/aws-apigatewayv2-integrations';
-import * as iam from '@aws-cdk/aws-iam';
-import * as lambda from '@aws-cdk/aws-lambda';
-import {NodejsFunction} from '@aws-cdk/aws-lambda-nodejs';
-import * as cdk from '@aws-cdk/core';
+import * as apiGateway from '@aws-cdk/aws-apigatewayv2-alpha';
+import * as apiGatewayIntegrations from '@aws-cdk/aws-apigatewayv2-integrations-alpha';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import {NodejsFunction} from 'aws-cdk-lib/aws-lambda-nodejs';
+import * as cdk from 'aws-cdk-lib';
 import * as path from 'path';
 import {SES_EMAIL_FROM, SES_REGION} from '../env';
 
