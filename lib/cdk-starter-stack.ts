@@ -19,7 +19,7 @@ export class CdkStarterStack extends cdk.Stack {
 
     // 👇 create the lambda that sends emails
     const mailerFunction = new NodejsFunction(this, 'mailer-function', {
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       memorySize: 1024,
       timeout: cdk.Duration.seconds(3),
       handler: 'main',
